@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap"
+      rel="stylesheet"
+    />
+  <title>code editor</title>
+  <style>
+
+    *{
+      font-family: "Work Sans", sans-serif;
+      padding: 0;
+      margin: 0;
+      color: blueviolet;
+    }
+    #html-editor, #css-editor, #js-editor{
+      width: 99%;
+      height: 300px;
+      background: #113;
+      color: #fff;
+      border: none;
+      border: 1px blueviolet  solid;
+    }
+    body{
+      background: #112;
+      color: #fff;
+    }
+    button{
+      width: 80px;
+      height: 30px;
+      background: limegreen;
+      border: none;
+      cursor: pointer;
+      font-size: 12px;
+      margin-top: 10px;
+      margin-left: 7px;
+      cursor: pointer;
+      border-radius:15px;
+      color:#112;
+    }
+    header{
+      position: fixed;
+      background: #112;
+      width: 100%;
+      height: 50px;
+    }
+    #html-editor{
+      color: orangered;
+    }
+    #css-editor{
+      color: goldenrod;
+    }
+    #js-editor{
+      color:yellow;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button id="run" onclick="run()">Run</button>
+  <button onclick="saveFile()">Save</button>
+  <button onclick="downloadFile()">Download</button>
+  </header>
+  <br>
+  <br>
+  <br>
+  <h1 style="margin-left: 100px;">CODE EDITOR</h1>
+  <h2 style="color: orangered; margin-left: 20px;font-size: 25px;">Html:</h2>
+  <textarea id="html-editor"></textarea>
+  <br>
+  <br>
+  <h2 style="color: orange; margin-left: 20px;font-size: 25px;">Css:</h2>
+  <textarea id="css-editor"></textarea>
+  <br>
+  <br>
+  <h2 style="color: yellow; margin-left: 20px;font-size: 25px;">JavaScript:</h2>
+  <textarea id="js-editor"></textarea>
+  <br>
+  
+  <script src="s.js"></script>
+</body>
+</html>

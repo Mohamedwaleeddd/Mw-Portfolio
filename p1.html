@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+        <span class="logo-name"><span style="color: steelblue;">E</span>DUCATION
+      </div>
+      <div class="sidebar">
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">Education</span>
+        </div>
+
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="link">Home</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i><img src="2048px-About_icon_(The_Noun_Project).svg.png" class="about"></i>
+                <span class="link">About us</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-bell icon"></i>
+                <span class="link">Courses</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-pie-chart-alt-2 icon"></i>
+                <span class="link">Pages</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i><img src="3095583.png" class="contact"></i>
+                <span class="link">Contact</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-folder-open icon"></i>
+                <span class="link">Files</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="bottom-cotent">
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-cog icon"></i>
+                <span class="link">Settings</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-log-out icon"></i>
+                <span class="link">Logout</span>
+              </a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="overlay"></section>
+    <div class="landing">
+      <center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+    <h1>Welcome To Our Education Website!!</h1>
+    <button>Learn More</button>
+      </center>
+    </div>
+    <br>
+    <center>
+      <h1>About us</h1>
+      <br>
+      <div style="display: flex;">
+      <div align="left">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat impedit facilis, fugiat assumenda blanditiis perferendis accusamus eligendi omnis culpa mollitia.</p>
+      </div>
+      <div align="right">
+        <img src="team-4.jpg" style="width 400px" class="img">
+      </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1>Courses</h1>
+    </center>
+      <div class="cards">
+     <div class="card"><h3>Html</h3></div>
+     <h1>+</h1>
+     <div class="card"><h3>Css</h3></div>
+     <h1>+</h1>
+     <div class="card"><h3>Javascript</h3></div> 
+     <br>
+     <br>
+     <h1>+</h1>
+    <div class="card"><h3>C++</h3></div>
+      </div>
+      <div style="display: flex;margin-left: 35%;">
+        <h1>= </h1> <h2 style="color:white">_</h2>
+      <h3 style="text-decoration: line-through;">50$</h3> <h2 style="color: red;">  25$</h2>
+      </div>
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+      <br>
+      <center>
+      <div class="contactus">
+        <h1 style="color: steelblue;">Contact Us</h1>     
+        <br>
+    <input type="text" placeholder="Name">
+      <br>
+      <br>
+    <input type="text" placeholder="Email">
+    <br>
+    <br>
+  <input type="text" placeholder="Write a subject">
+  <br>
+  <br>
+  <textarea placeholder="Your massage" rows="5"></textarea>
+  <br>
+  <button type="submit">submit</button>
+      </div>
+      <br>
+      </center>
+      <br>
+      <br>
+      <br>
+  <footer>
+    <br>
+    <h4>Copyright By Mohamed Waleed With💙</h4>
+  </footer>
+    <script>
+      const navBar = document.querySelector("nav"),
+        menuBtns = document.querySelectorAll(".menu-icon"),
+        overlay = document.querySelector(".overlay");
+
+      menuBtns.forEach((menuBtn) => {
+        menuBtn.addEventListener("click", () => {
+          navBar.classList.toggle("open");
+        });
+      });
+
+      overlay.addEventListener("click", () => {
+        navBar.classList.remove("open");
+      });
+    </script>
+  </body>
+</html>
+
